@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timepass - Proposal | Don't take it seriously!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="warning">
+        <h1>Warning!!!</h1>
+        <p>Hello, this is a web page created by me for fun, <br>Do not take this seriously! <br> Have fun Exploring this fun website <br> </p>
+        <button class="button" id="continueBtn"><a href="index.html">Continue</a></button>
+    </div>
+    <footer class="footer">
+        <p>Made with <span class="heart">♥</span> by Rachit Porwal</p>
+    </footer>
+    
+</body>
+<script>
+    document.getElementById("continueBtn").addEventListener("click", function() {
+        // Set a flag in localStorage to mark that the user has visited the warning page
+        localStorage.setItem("visitedWarningPage", "true");
+        // Redirect to the index.html page
+        window.location.href = "warning.html";
+    });
+</script>
+</html>

@@ -1,0 +1,203 @@
+* {
+    font-family: cursive;
+}
+
+body {
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    background-color: rgba(219, 112, 147, 0.6);
+    padding: 20px;
+    border: red solid 1px;
+    border-radius: 25px;
+}
+
+.warning h1 {
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    margin: 2px;
+}
+
+.warning p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.button {
+    background-color: #F084E4;
+    border: palevioletred solid 1px;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+.button:hover {
+    background-color: #F075E5;
+    opacity: 2.0;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.original {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    background-color: rgba(219, 112, 147, 0.6);
+    padding: 25px;
+    border: red solid 1px;
+    border-radius: 25px;
+}
+
+.original h3 {
+    text-align: center;
+}
+
+.yes, .no {
+    background-color: #F084E4;
+    border: palevioletred solid 1px;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1.0;
+    padding: 0;
+}
+
+.yes:hover, .no:hover {
+    background-color: #F075E5;
+    opacity: 2.0;
+}
+
+.yes a, .no a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 24px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.footer {
+    position: fixed; /* Sticks to the bottom of the page */
+    bottom: 0;
+    width: 100%;
+    background-color: #f084e4; /* Match the style of your existing buttons */
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+    color: white;
+    font-family: cursive;
+    border-top: 1px solid palevioletred; /* Adds a subtle border on top */
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .heart {
+    color: red; /* Red heart symbol */
+    font-size: 18px;
+}
+
+
+/* Responsive design starts here */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+
+    .warning {
+        padding: 15px;
+    }
+
+    .warning h1 {
+        font-size: 35px;
+    }
+
+    .warning p {
+        font-size: 18px;
+    }
+
+    .original {
+        padding: 20px;
+    }
+
+    .original h3 {
+        font-size: 18px;
+    }
+
+    .yes, .no {
+        width: 100%;
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .yes a, .no a {
+        padding: 5px 20px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .warning h1 {
+        font-size: 30px;
+    }
+
+    .warning p {
+        font-size: 16px;
+    }
+
+    .original h3 {
+        font-size: 16px;
+    }
+
+    .yes, .no {
+        font-size: 15px;
+        height: 30px;
+    }
+
+    .yes a, .no a {
+        padding: 5px 15px;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+
+    .original, .warning {
+        padding: 15px;
+    }
+}
